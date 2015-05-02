@@ -32,9 +32,9 @@ public class DB{
         coll.insert(doc);
     }
 
-    public void  getColl() {
+    public DBObject  getColl() {
         DBObject myDoc = coll.findOne();
-        System.out.println(myDoc);
+        return myDoc;
     }
 }
 
